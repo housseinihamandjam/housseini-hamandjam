@@ -1,0 +1,267 @@
+/* ==== Animation de base ==== */
+.fade-in,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: all 0.8s ease; /* Transition pour opacité et transformation */
+  transform: translateY(40px); /* Par défaut, du bas vers le haut */
+}
+
+/* Pour fade-left et fade-right spécifiques */
+.fade-left { transform: translateX(-50px); }
+.fade-right { transform: translateX(50px); }
+
+/* ==== Animation visible ==== */
+.fade-in.visible { transform: translateY(0); opacity: 1; }
+.fade-left.animate-left { transform: translateX(0); opacity: 1; }
+.fade-right.animate-right { transform: translateX(0); opacity: 1; }
+
+/* ==== Optionnel : transition delay pour effet cascade ==== */
+.fade-in,
+.fade-left,
+.fade-right {
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+  /* Le delay sera appliqué dynamiquement via JavaScript */
+}
+
+/* ===== Exemple pour override si besoin ===== */
+.fade-in.visible,
+.fade-left.animate-left,
+.fade-right.animate-right {
+  /* L'animation cascade prendra le delay appliqué en JS */
+}
+
+
+
+/* ================== Header ================== */
+header {
+    background-color: #b5d5f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f9fd0d !important;
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    color: #eae5e5 !important;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* ================== Boutons ================== */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* ================== Compétences ================== */
+#competences h2 {
+    letter-spacing: 1px;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card ul li {
+    margin-bottom: 8px;
+}
+
+/* ================== Section "Qui suis-je" ================== */
+#quisuisje img {
+    border: 5px solid #0d6efd;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#quisuisje img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+/* ================== Contact ================== */
+#contact {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+#contact form {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+#contact input,
+#contact textarea {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+}
+
+/* ================== Footer ================== */
+.footer_section {
+    background-color: #111;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer_section a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer_section a:hover {
+    color: #0d6efd;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a.facebook { background-color: #3b5998; }
+.social-icons a.twitter { background-color: #1da1f2; }
+.social-icons a.linkedin { background-color: #0077b5; }
+.social-icons a.instagram { background-color: #e1306c; }
+
+.social-icons a:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ================== Info Section ================== */
+.info_section {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px 20px;
+}
+
+.info_section h4 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.info_section a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.info_section a:hover {
+    color: #ffce3a;
+    transform: translateX(5px);
+}
+
+/* ================== Animations ================== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.fade-left.animate-left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease;
+}
+
+.fade-right.animate-right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

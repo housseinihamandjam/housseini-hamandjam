@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Housseini Hamandjam - Développeur Web & Mobile</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-3h3x3h7vbX+Yv8/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Style personnalisé -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#home">Housseini Hamandjam</a>
+
+        <!-- Bouton burger -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens -->
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quisuisje">Qui suis-je</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== SECTION QUI SUIS-JE ===== -->
+  <section class="container py-5" id="quisuisje" style="margin-top: 90px;">
+    <div class="row align-items-center fade-in">
+      <div class="col-lg-6 text-center text-lg-start fade-in">
+        <span class="mb-3 text-secondary">Je suis</span>
+        <h1 class="fw-bold mb-3"> <span class="text-primary">Housseini Hamandjam</span></h1>
+        <h4 class="text-secondary mb-4">Développeur Web & Mobile</h4>
+        <p class="mb-4" style="line-height: 1.8;">
+          Passionné par le développement moderne, je conçois des sites web et applications mobiles 
+          à la fois élégants, performants et intuitifs.
+        </p>
+        <a href="CV HOUSSEINI.pdf" download class="btn btn-primary px-4 py-2">
+          <i class="bi bi-download me-2"></i> Télécharger mon CV
+        </a>
+      </div>
+      <div class="col-lg-6 text-center mb-4 mb-lg-0 py-4">
+        <img src="images/image1.jpg" alt="Photo de Housseini Hamandjam"
+             class="img-fluid rounded-circle shadow-lg"
+             style="max-width: 300px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION À PROPOS ===== -->
+  <section class="bg-light py-5 fade-in" id="about">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase">À propos de moi</h2>
+        <p class="text-muted">Découvrez mon parcours, mes valeurs et ma philosophie de développement.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <h5 class="text-primary mb-3"><i class="fa fa-graduation-cap me-2"></i>Mon parcours</h5>
+            <p>
+              Titulaire d’une <strong>licence en Informatique</strong>, j’ai suivi plusieurs formations en 
+              <strong>développement web</strong> et <strong>mobile</strong>.  
+              Ces expériences ont renforcé mes compétences techniques et mon esprit d’équipe.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <h5 class="text-primary mb-3"><i class="fa fa-bullseye me-2"></i>Ma vision</h5>
+            <p>
+              Je crois qu’un bon développeur ne se limite pas à écrire du code :  
+              il conçoit des solutions qui <strong>simplifient la vie</strong> des utilisateurs.  
+              Mon ambition est de contribuer à des projets innovants 
+              dans un environnement collaboratif et stimulant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION COMPÉTENCES ===== -->
+  <section class="container py-5" id="competences">
+    <div class="text-center mb-5 fade-in">
+      <h2 class="fw-bold text-uppercase">Compétences</h2>
+      <p class="text-muted">Mes compétences techniques, expériences et qualités personnelles</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6 fade-in">
+        <div class="skill-card p-4 h-100 shadow-sm">
+          <h5 class="text-primary mb-3"><i class="bi bi-code-slash"></i> Compétences techniques</h5>
+          <ul class="list-unstyled">
+            <li><strong>Langages :</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Frameworks :</strong> Bootstrap, Tailwind CSS</li>
+            <li><strong>Outils :</strong> Git, GitHub, VS Code, Figma</li>
+            <li><strong>Intégration :</strong> API REST, Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="skill-card p-4 h-100 shadow-sm">
+          <h5 class="text-primary mb-3"><i class="bi bi-briefcase"></i> Expériences</h5>
+          <ul class="list-unstyled">
+            <li>Développement front-end : Réalisation d’un site d’inscription en ligne</li>
+            <li>Stage professionnel : MARHABA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="skill-card p-4 h-100 shadow-sm">
+          <h5 class="text-primary mb-3"><i class="bi bi-mortarboard"></i> Éducation</h5>
+          <ul class="list-unstyled">
+            <li>Licence en Informatique</li>
+            <li>Certification : Front-End Development (CityHack)</li>
+            <li>Certification : Programmeur (GSD Maroua)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="skill-card p-4 h-100 shadow-sm">
+          <h5 class="text-primary mb-3"><i class="bi bi-folder-check"></i> Projets réalisés</h5>
+          <ul class="list-unstyled">
+            <li>Portfolio personnel</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="skill-card p-4 h-100 shadow-sm">
+          <h5 class="text-primary mb-3"><i class="bi bi-person-check"></i> Soft Skills</h5>
+          <ul class="list-unstyled">
+            <li>Autonomie</li>
+            <li>Esprit d’équipe</li>
+            <li>Sens du détail</li>
+            <li>Capacité d’apprentissage rapide</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6 fade-in">
+        <div class="skill-card p-4 h-100 shadow-sm">
+          <h5 class="text-primary mb-3"><i class="bi bi-bullseye"></i> Objectif professionnel</h5>
+          <p>Intégrer une équipe dynamique pour collaborer sur des projets techniques où je peux évoluer et apprendre continuellement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION CONTACT ===== -->
+  <section class="container py-5" id="contact">
+    <div class="text-center mb-5 fade-in">
+      <h2 class="fw-bold text-uppercase">Contactez-moi</h2>
+      <p class="text-muted">
+        Vous avez une question, un projet ou simplement envie d’échanger ?  
+        Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.
+      </p>
+    </div>
+
+    <div class="row justify-content-center fade-in">
+      <div class="col-lg-8">
+        <form class="p-4 rounded shadow-sm bg-white" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="7c13ebd6-1975-4425-96fb-062136653c51">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom..." class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Adresse Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email..." class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Numéro de téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro..." class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." class="form-control" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5 py-2">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <section class="info_section py-5 text-light fade-in bg-dark">
+    <div class="container">
+      <div class="row gy-4">
+      <div class="col-md-4"></div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h4 class="fw-bold mb-3 text-uppercase">Contact</h4>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-map-marker me-2 text-warning"></i> Dougoy-Enieg</li>
+            <li><i class="fa fa-phone me-2 text-success"></i> +237 655 965 833</li>
+            <li><i class="fa fa-envelope me-2 text-danger"></i>
+              <a href="mailto:housseinihamandjam2025@gmail.com" class="text-light text-decoration-none">
+                housseinihamandjam2025@gmail.com
+              </a>
+            </li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="col-md-3">
+          <h4 class="fw-bold mb-3 text-uppercase">Liens rapides</h4>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#quisuisje">Qui suis-je</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COPYRIGHT ===== -->
+  <footer class="footer_section text-center text-light py-3 bg-secondary">
+    <p class="mb-0">
+      &copy; <span id="displayYear"></span> Tous droits réservés — Design par 
+      <a href="#" class="fw-bold text-warning text-decoration-none">Housseini Hamandjam</a>
+    </p>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Affiche l’année automatique
+    document.getElementById("displayYear").textContent = new Date().getFullYear();
+
+    // Animation fade-in
+    const fadeElements = document.querySelectorAll('.fade-in, .fade-left, .fade-right');
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          if (entry.target.classList.contains('fade-left')) entry.target.classList.add('animate-left');
+          else if (entry.target.classList.contains('fade-right')) entry.target.classList.add('animate-right');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
